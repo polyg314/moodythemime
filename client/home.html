@@ -1,0 +1,65 @@
+<template name="home">
+
+{{#famousContext id='mainCtx'}}
+
+
+
+ {{#Surface size='[300,300]' align='[.5,.5]' origin='[.5,.5]' class='centered sun'}}
+ {{/Surface}}
+<!--  
+ 
+ {{>Surface template='footer' style='line-height: 25px' size='[undefined,50]' origin='[0,1]' align='[0,1]' class='bg-darkblue'}} -->
+
+ 
+{{/famousContext}} 
+</template>
+
+
+<template name="transition">
+{{#famousContext id='mainCtx'}}
+	 
+	  {{#Surface 
+	    size='[undefined,50]' 
+	    style='line-height: 60px' 
+	    origin='[0,0]' align='[0,0]' 
+	    class='centered white-font bg-darkblue' translate='[0,0,0]'}}
+	  Moody, the Emotional Mime
+	  {{/Surface}}
+
+<!--create red card surface -->
+    {{#Surface 
+      id="card"  
+      size="[350,350]"  
+      origin="[.5, 1]" 
+ 	  align="[0.5, 0.65]" class="card"
+      modifier="Modifier"}}
+    {{/Surface}}
+
+    {{#Surface 
+      id="face"  
+      size="[350,350]"  
+      origin="[.5, 1]" 
+ 	  align="[0.5, 0.65]" class="faceCard"
+ 	}}
+ 	Moody just has so many emotions
+    {{/Surface}}
+
+    {{#Surface 
+      id="button"  
+      size="[350,50]"  
+      origin="[0.5, 0.5]" 
+ 	  align="[0.5, 0.8]" class="button"
+      modifier="Modifier"}}
+    How is Moody? 
+    {{/Surface}}
+
+
+{{/famousContext}}
+</template>
+
+
+<!-- <template name="footer">
+<div class='centered'>
+This is a footer rendered using Template Inclusion {{react}}
+</div>
+</template> -->
