@@ -32,6 +32,8 @@ body {
   background-color: hsl(0,0%,95%);
   border: solid 2px hsl(0,0%,15%);
   border-radius: 5px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/06/64/b3/0664b3cada4f589efeaf09ef4839ddfd.jpg");
+  background-size: 100% 100%;
 }
 
 .button{

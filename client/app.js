@@ -31,7 +31,7 @@ $(document).click("#button",function(){
 			$(".faceCard").text("Moody is " + moods[random].mood)
 		}
 		$(".faceCard").css("background-image", moods[random].url)
-		$(".button").text("Click to bring up card")
+		$(".button").text("Bring up card")
 		last = moods[random].mood
 	}
 })
